@@ -1,0 +1,21 @@
+#include <stdio.h>
+int a=0,b=1,c,n;
+int fibo(int x)
+{
+    if(x>2)
+    {
+       c=a+b;
+       printf("%d\n",c);
+       a=b;
+       b=c;
+       fibo(x-1);
+    }
+    
+}
+
+int main(){
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    printf("%d\n%d\n",a,b);
+    fibo(n);
+}
