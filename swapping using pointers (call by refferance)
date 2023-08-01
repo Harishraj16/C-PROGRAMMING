@@ -1,18 +1,17 @@
 #include <stdio.h>
-int swap(int *p1,int *p2)
-{
-    int t;
-    t=*p1;
-    *p1=*p2;
-    *p2=t;
-    
+int swap(int* n,int* m){
+    int temp;
+    temp=*n;
+    *n=*m;
+    *m=temp;
+    return 0;
 }
 int main() {
     int a,b;
-    printf("Enter the two numbers: ");
-    scanf("%d%d",&a,&b);
+    printf("enter the two numbers: ");
+    scanf("%d %d",&a,&b);
+    printf("Before swapping: %d %d",a,b);
     swap(&a,&b);
-    printf("%d,%d",a,b);
-
+    printf("\nAfter swapping: %d %d",a,b);
     return 0;
 }
