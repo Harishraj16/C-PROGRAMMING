@@ -1,3 +1,4 @@
+//Greatest of three numbers:
 #include<stdio.h>
 int main()
 {
