@@ -15,10 +15,10 @@ int main(){
         }
     }
     if(palin){
-        printf("Palin");
+        printf("Palindrome");
     }
     else{
-        printf("Not palin");
+        printf("Not a Palindrome");
     }
     return 0;
 }
