@@ -20,10 +20,8 @@ int main() {
        
        if(min>arr[i])
        min=arr[i];
-    }
-    for(i=0;i<size;i++)
-    {
-        sum=sum+arr[i];
+       
+       sum=sum+arr[i];
     }
     avg=sum/size;
 
