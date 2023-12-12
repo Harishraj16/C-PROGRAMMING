@@ -3,8 +3,8 @@
 int main(){
     char str[100];
     printf("Enter thet String:");
-    scanf("%s",str);
-    int length = strlen(str);
+    fgets(str,sizeof(str),stdin);
+    int length = strlen(str)-1;
     int palin=1;
     
     for(int i=0;i<length/2;i++){
