@@ -4,7 +4,6 @@ int main(){
     char str[100];
     printf("Enter thet String:");
     scanf("%s",str);
-    str[strlen(str)]='\0';
     int length = strlen(str);
     int palin=1;
     
