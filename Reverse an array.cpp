@@ -9,12 +9,19 @@ void f(int i,int arr[],int n){
 int main()
 {
     int n;
+    cout<<"Enter the size of the array: ";
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++){
+        cout<<"arr["<<i<<"]: ";
         cin>>arr[i];
     }
+    cout<<"Original array: ";
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
     f(0,arr,n);
+    cout<<"\nReversed array: ";
     for(int j=0;j<n;j++){
         cout<<arr[j];
     }
