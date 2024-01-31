@@ -28,3 +28,43 @@ int main()
 	}
 	return 0;
 }
+
+//Armstrong number using Recursion:
+
+#include <stdio.h>
+#include <math.h>
+int isAmstrong(int n,int count,int target) {
+    static int sum = 0;
+    if(n==0){
+        if(sum == target) return 1;
+        else return 0;
+    }
+    int rem = n % 10;
+    sum = sum + (pow(rem,count));
+    return isAmstrong(n / 10,count,target);
+}
+
+int countCheck(int num){
+    int count = 0;
+    while(num){
+        count++;
+        num /= 10;
+    }
+    return count;
+}
+
+int main() {
+    int num;
+    scanf("%d", &num);
+    int count  = countCheck(num);
+    int check = isAmstrong(num,count,num);
+    
+    if (check) {
+        printf("Palindrome\n");
+    } else {
+        printf("Not a Palindrome\n");
+    }
+    printf("%d",count);
+    return 0;
+}
+
