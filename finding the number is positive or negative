@@ -19,3 +19,17 @@ int main() {
 
     return 0;
 }
+
+
+def check_positive_or_negative(number):
+    # Assuming number is an integer
+    sign_bit = number >> 31 & 1  # Extract the sign bit (0 for positive, 1 for negative)
+    
+    if sign_bit == 0:
+        print("The number is positive.")
+    else:
+        print("The number is negative.")
+
+# Example usage:
+number = int(input("Enter a number: "))
+check_positive_or_negative(number)
