@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[100];
-    printf("Enter that String:");
+    printf("Enter the String:");
     fgets(str,sizeof(str),stdin);
     int length = strlen(str)-1;
     int palin=1;
