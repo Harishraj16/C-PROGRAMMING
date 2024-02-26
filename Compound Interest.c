@@ -3,7 +3,7 @@
 float CI(float p,float r,float t){
     float ci=p*(pow((1+r/100),t));
     return ci;
-}
+} 
 int main() {
     float P,T,R,N,intrest;
     printf("Principal Amount: ");
