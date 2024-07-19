@@ -1,3 +1,8 @@
+/*
+check whether the given number is palindrome or not. If the original number and its reversed number is equal, it is said to be Palindrome.
+*/
+
+
 #include<stdio.h>
 int main(){
   long long int n;
