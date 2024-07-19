@@ -1,3 +1,8 @@
+/*
+Check whether the given two numbers are Anagram or not. Two numbers are said to be as anagram if both numbers formed with same digits.
+*/
+
+
 #include<stdio.h>
 int main(){
   long long int n1,n2;
