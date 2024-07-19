@@ -1,3 +1,11 @@
+/*
+Find whether the given number is armstrong or not. The number of its digit raised to the sum of power of individual digits, is equal to the original number.
+
+Eg: 153,here the number of digits is 3. So, 1^3+5^3+3^3=153.
+*/
+
+
+
 #include <stdio.h>
 long long int power(int digit, int count){
   long long int res = 1;
