@@ -1,3 +1,9 @@
+/*
+Find whether the given number is strong number or not. The sum of factorial of each digit, is equal to the original number.
+*/
+
+
+
 #include<stdio.h>
 long long int factorial(long long int n){
   if(n==1) return 1;
